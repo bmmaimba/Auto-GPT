@@ -1,6 +1,9 @@
 import unittest
-
 import coverage
+import os
+import openai
+ 
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 if __name__ == "__main__":
     # Start coverage collection
